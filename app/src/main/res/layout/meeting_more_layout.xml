@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btn_meeting_load_more"
+        style="@style/Widget.GOME.Light.Button"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/expand_more"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/meeting_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/location_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#00000000"
+            android:hint="@string/conference_room"
+            android:textColorHint="#4d000000"
+            android:textSize="15sp" />
+
+        <View style="@style/LineSplit" />
+
+        <EditText
+            android:id="@+id/remark_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#00000000"
+            android:hint="@string/remarks"
+            android:textColorHint="#4d000000"
+            android:textSize="15sp" />
+
+        <View style="@style/LineSplit" />
+
+        <LinearLayout
+            android:id="@+id/meeting_message_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/meeting_message_cb"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/schedule_all_day_tv"
+                style="@style/FirstLineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/SMS_notifying"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

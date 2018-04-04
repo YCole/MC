@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="#FFFFFF"
+    android:id="@+id/email_address_select_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/select_contact_view"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+       <LinearLayout
+            android:focusable="true"
+               android:focusableInTouchMode="true"
+               android:id="@+id/email_name_address_search_label"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/email_name_address_search"
+                android:hint="@string/search_action"
+                android:inputType="textEmailAddress"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:windowSoftInputMode="stateHidden"
+                android:layout_weight="1"/>
+
+            <Button android:id="@+id/select_email_address"
+                android:text="@string/select"
+                android:layout_height="fill_parent"
+                android:minWidth="@dimen/button_minWidth"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2">
+
+            <ListView android:id="@+id/emailListView"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+
+        <!-- RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:drawable/bottom_bar"            
+            android:layout_height="56dip">
+
+            <Button
+                android:id="@+id/select_email_address_1"
+                android:text="@string/select"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/button_minWidth"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" /> 
+
+            <Button
+                android:id="@+id/cancle_select_action_1"
+                android:text="@string/cancel_action"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/button_minWidth"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />            
+        </RelativeLayout-->
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/alarm_tab_selector"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+
+            <Button
+                android:id="@+id/cancle_select_action_1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_tab_selector"
+                android:focusable="true"
+                android:text="@string/cancel_action"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/select_email_address_1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_tab_selector"
+                android:focusable="true"
+                android:text="@string/select"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_group_contact_view"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+       <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/email_name_address_search_group_label"
+            android:layout_width="fill_parent"
+            android:focusable="true"
+               android:focusableInTouchMode="true"
+            android:layout_height="wrap_content">
+                        
+            <EditText android:id="@+id/email_name_address_search_group"
+                android:hint="@string/search_action"
+                android:inputType="textEmailAddress"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:windowSoftInputMode="stateHidden"
+                android:layout_weight="1"/>
+
+            <Button android:id="@+id/select_email_address_group"
+                android:text="@string/select"
+                android:layout_height="fill_parent"
+                android:minWidth="@dimen/button_minWidth"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2">
+            <ListView android:id="@+id/emailListView_group"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+
+        <!-- RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:drawable/bottom_bar"            
+            android:layout_height="56dip">
+            <Button
+                android:id="@+id/cancle_select_action_group"
+                android:text="@string/cancel_action"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/button_minWidth"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />            
+        </RelativeLayout-->
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/alarm_tab_selector"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+            <Button
+                android:id="@+id/cancle_select_action_group"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_tab_selector"
+                android:focusable="true"
+                android:text="@string/cancel_action"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/select_current_contact_view"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+       <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/email_name_address_search_current_label"
+            android:layout_width="fill_parent"
+            android:focusable="true"
+               android:focusableInTouchMode="true"
+            android:layout_height="wrap_content">
+            
+            <EditText android:id="@+id/email_name_address_search_current"
+                android:hint="@string/search_action"
+                android:inputType="textEmailAddress"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:windowSoftInputMode="stateHidden"
+                android:layout_weight="1"/>
+
+            <Button android:id="@+id/select_email_address_current"
+                android:text="@string/select"
+                android:layout_height="fill_parent"
+                android:minWidth="@dimen/button_minWidth"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2">
+            <ListView android:id="@+id/emailListView_current"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+
+        <!-- LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:drawable/bottom_bar"            
+            android:layout_height="56dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/select_email_address_2"
+                android:text="@string/select"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/button_minWidth"/> 
+            
+            <Button
+                android:id="@+id/cancle_select_action_2"
+                android:text="@string/cancel_action"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/button_minWidth"/>            
+        </LinearLayout-->
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/alarm_tab_selector"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+
+            <Button
+                android:id="@+id/cancle_select_action_2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_tab_selector"
+                android:focusable="true"
+                android:text="@string/cancel_action"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/select_email_address_2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alarm_tab_selector"
+                android:focusable="true"
+                android:text="@string/select"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout> 
+ 

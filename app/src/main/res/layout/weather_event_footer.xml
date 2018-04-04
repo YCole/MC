@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:clipToPadding="false"
+    android:gravity="center_vertical"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart" >
+
+    <FrameLayout
+        android:id="@+id/almanac_item_it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:gravity="top"
+            android:maxWidth="40dp"
+            android:minHeight="56dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/almanac_item_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/almanac_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/almanac_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/almanac_text1"
+                android:layout_below="@id/almanac_text1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAppearance="?attr/android:textAppearanceListItemSecondary"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/almanac_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/almanac_text2"
+                android:layout_below="@id/almanac_text2"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAppearance="?attr/android:textAppearanceListItemSecondary"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

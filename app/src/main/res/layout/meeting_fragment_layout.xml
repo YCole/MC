@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/meeting_title_et"
+        style="@style/FirstLineText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#00000000"
+        android:hint="@string/theme"
+        android:minHeight="56dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp" />
+
+    <View style="@style/LineSplit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/start_time_time"
+                    style="@style/FirstLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/start_time_date"
+                    style="@style/SecondLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/right_arrow" />
+
+        <RelativeLayout
+            android:id="@+id/end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/end_time_time"
+                    style="@style/FirstLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/end_time_date"
+                    style="@style/SecondLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/reminder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" 
+        android:background="@drawable/gome_calendar_selector">
+
+        <TextView
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/remind" />
+
+        <ImageView
+            android:id="@+id/icon_end"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray" />
+
+        <TextView
+            android:id="@+id/reminder_text_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/icon_end"
+            android:text="@string/dismiss_label" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.android.calendar.view.ZanyEditText
+            android:id="@+id/meeting_people_et"
+            style="@style/FirstLineText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:hint="@string/meeting_person"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/add_contacts"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/gome_icon_calendar_add" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <com.hct.calendar.ui.TagFlowLayout
+        android:id="@+id/flow_layout_meeting_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone" />
+
+    <com.hct.calendar.ui.MeetingMoreLayout
+        android:id="@+id/meeting_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hct.calendar.ui.MeetingMoreLayout>
+
+</LinearLayout>

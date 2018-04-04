@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/birthday_people_et"
+            style="@style/FirstLineText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_toStartOf="@+id/add_contacts"
+            android:layout_marginStart="20dp"
+            android:background="#00000000"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/birthday_person" />
+
+        <ImageView
+            android:id="@+id/add_contacts"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/gome_icon_calendar_add" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/birthday_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/birthday" />
+
+        <ImageView
+            android:id="@+id/icon_end"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray" />
+
+        <TextView
+            android:id="@+id/birthday_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/icon_end" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/reminder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/remind" />
+
+        <ImageView
+            android:id="@+id/icon_end1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray" />
+
+        <TextView
+            android:id="@+id/reminder_text_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/icon_end1"
+            android:text="@string/defalut_alert_birth" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/repeat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/repeatability" />
+
+        <ImageView
+            android:id="@+id/icon_end2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray" />
+
+        <TextView
+            android:id="@+id/repeat_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/icon_end2"
+            android:text="@string/one_off_activity" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+</LinearLayout>

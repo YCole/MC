@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="match_parent">
+
+    <com.android.calendar.view.MonthView
+        android:id="@+id/my_data"
+        android:layout_width="100dp"
+        android:paddingTop="3dp"
+        android:layout_height="@dimen/year_item_height"/>
+
+</LinearLayout>

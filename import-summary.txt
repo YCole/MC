@@ -1,0 +1,81 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\Calendar_IUV.iml
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* Android.mk
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:26.+
+gson-2.8.1.jar => com.google.code.gson:gson:2.8.1
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.8.1.jar => version 2.8.1 in com.google.code.gson:gson:2.8.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\AMap_Location_V3.4.1_20170629.jar => app\libs\AMap_Location_V3.4.1_20170629.jar
+* libs\android-common.jar => app\libs\android-common.jar
+* libs\android-support-v13_intermediates.jar => app\libs\android-support-v13_intermediates.jar
+* libs\colorpicker.jar => app\libs\colorpicker.jar
+* libs\HCTCalendarLib.jar => app\libs\HCTCalendarLib.jar
+* libs\logutil-1.4.2.jar => app\libs\logutil-1.4.2.jar
+* libs\okhttp-3.2.0.jar => app\libs\okhttp-3.2.0.jar
+* libs\okio-1.13.0.jar => app\libs\okio-1.13.0.jar
+* libs\stetho-1.4.2-fatjar.jar => app\libs\stetho-1.4.2-fatjar.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\hct\lbsApp\aidl\IlbsService.aidl => app\src\main\aidl\com\hct\lbsApp\aidl\IlbsService.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

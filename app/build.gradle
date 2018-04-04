@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.android.calendar"
+        minSdkVersion 24
+        targetSdkVersion 24
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile files('libs/AMap_Location_V3.4.1_20170629.jar')
+    compile files('libs/android-common.jar')
+    compile files('libs/android-support-v13_intermediates.jar')
+    compile files('libs/colorpicker.jar')
+    compile files('libs/HCTCalendarLib.jar')
+    compile files('libs/logutil-1.4.2.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.13.0.jar')
+    compile files('libs/stetho-1.4.2-fatjar.jar')
+}

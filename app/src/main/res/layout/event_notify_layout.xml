@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notify_super"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80151d27" >
+
+    <RelativeLayout
+        android:id="@+id/notify_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/notify_bg" >
+
+        <TextView
+            android:id="@+id/event_notify_title_tv"
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/schedule_reminder" />
+
+        <TextView
+            android:id="@+id/event_notify_desc_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_notify_title_tv"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/event_notify_time_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_notify_desc_tv"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_notify_time_tv"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/notify_cancel_button"
+                style="@style/Widget.GOME.Light.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/later" />
+
+            <Button
+                android:id="@+id/notify_sub_button"
+                style="@style/Widget.GOME.Light.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="@string/got_it" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

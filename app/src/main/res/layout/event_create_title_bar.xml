@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_create_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="#f1f2f3" >
+
+    <!-- ?attr/actionBarSize -->
+
+    <ImageView
+        android:id="@+id/event_create_cancel"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingEnd="8dp"
+        android:paddingStart="18dp"
+        android:src="@drawable/icon_cancel" />
+
+    <TextView
+        android:id="@+id/event_create_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/new_schedule"
+        android:textColor="#e6000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/event_create_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:text="@string/finish"
+        android:textColor="#ff2e76fc"
+        android:textSize="15sp" />
+
+</RelativeLayout>

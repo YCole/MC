@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- MultiStateButton doesn't define any special attributes -->
+    <declare-styleable name="com.android.calendar.MultiStateButton">
+    </declare-styleable>
+
+    <attr name="actionBarSize" format="dimension">
+        <enum name="wrap_content" value="0"/>
+    </attr>
+    <declare-styleable name="RecipientEditTextView">
+        <attr name="invalidChipBackground" format="reference" />
+        <attr name="chipBackground" format="reference" />
+        <attr name="chipBackgroundPressed" format="reference" />
+        <attr name="chipDelete" format="reference" />
+        <attr name="chipAlternatesLayout" format="reference" />
+        <attr name="chipPadding" format="reference" />
+        <attr name="chipHeight" format="reference" />
+        <attr name="chipFontSize" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="TagFlowLayout">
+        <attr format="boolean" name="auto_select_effect"/>
+        <attr format="integer" name="max_select"/>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+     </declare-styleable>
+    <!-- From: file:/Users/zhy/github_repository/mine/Github-FlowLayout/flowlayout-lib/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">flowlayout-lib</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_right">right</string>
+    
+    <declare-styleable name="OneLineCheckboxLayout">
+        <attr name="text" format="string" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+     <declare-styleable name="wheelview">
+        <attr name="widthProportion" format="float"/>
+    </declare-styleable>
+    
+     <!-- TimePicker attributes start-->
+     <declare-styleable name="GMPicker">
+        <attr name="unit" format="string" />
+        <attr name="unitTextColor" format="color" />
+        <attr name="unitTextSize" format="dimension" />
+        <attr name="willShowUnit" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="GMTimePicker">
+        <attr name="mode" format="integer">
+            <flag name="year" value="0x40" />
+            <flag name="month" value="0x20" />
+            <flag name="day" value="0x10" />
+            <flag name="complex" value="0x08" />
+            <flag name="hour" value="0x04" />
+            <flag name="minute" value="0x02" />
+            <flag name="second" value="0x01" />
+        </attr>
+        <attr name="startYear" format="integer" />
+        <attr name="endYear" format="integer" />
+        <attr name="minDate" format="string" />
+        <attr name="maxDate" format="string" />
+        <attr name="lunarDate" format="boolean" />
+    </declare-styleable>
+    <!-- TimePicker attributes end-->
+    
+</resources>

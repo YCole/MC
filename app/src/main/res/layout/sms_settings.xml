@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#F1F2F3"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="@string/preferences_import_sms"
+            android:textColor="#E6000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBFC3C7" />
+
+    <RelativeLayout
+        android:id="@+id/gs_card_root"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/preferences_credit_card_payment"
+            android:textColor="#E6000000"
+            android:textSize="15sp" />
+
+        <gm.widget.GomeSwitch
+            android:id="@+id/gs_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="#1F000000" />
+
+    <RelativeLayout
+        android:id="@+id/gs_air_ticket_root"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/preferences_air_train_ticket"
+            android:textColor="#E6000000"
+            android:textSize="15sp" />
+
+        <gm.widget.GomeSwitch
+            android:id="@+id/gs_air_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="#1F000000" />
+
+    <RelativeLayout
+        android:id="@+id/gs_hotel_root"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/preferences_hotel_reservation"
+            android:textColor="#E6000000"
+            android:textSize="15sp" />
+
+        <gm.widget.GomeSwitch
+            android:id="@+id/gs_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="#1F000000" />
+
+</LinearLayout>

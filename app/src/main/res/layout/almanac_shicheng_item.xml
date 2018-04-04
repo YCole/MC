@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_shicheng"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_height01"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding05"
+        android:textSize="@dimen/font_size03"
+        android:textColor="@color/color06_transparency14"
+        android:text="@string/the_hour" />
+
+    <TextView
+        android:id="@+id/tv_caisheng"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_height01"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/font_size03"
+        android:textColor="@color/color06_transparency14"
+        android:text="@string/caishen" />
+
+    <TextView
+        android:id="@+id/tv_xisheng"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_height01"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/font_size03"
+        android:textColor="@color/color06_transparency14"
+        android:text="@string/xishen" />
+
+    <TextView
+        android:id="@+id/tv_ji"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_height01"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingEnd="@dimen/padding05"
+        android:textSize="@dimen/font_size03"
+        android:textColor="@color/color06_transparency14"
+        android:text="@string/happy_time" />
+
+</LinearLayout>

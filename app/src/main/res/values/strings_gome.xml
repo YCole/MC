@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="volumn_stream_name_bluetooth">Bluetooth</string>
+
+    <!-- Menu item displayed at the end of a menu to allow users to see another page worth of menu items. This is shown on any app's menu as long as the app has too many items in the menu.-->
+    <string name="more_item_label">More</string>
+    <!-- Prepended to the shortcut for a menu item to indicate that the user should hold the MENU button together with the shortcut to invoke the item. For example, if the shortcut to open a new tab in browser is MENU and B together, then this would be prepended to the letter "B" -->
+    <string name="prepend_shortcut_label">Menu+</string>
+    <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+space for the shortcut. -->
+    <string name="menu_space_shortcut_label">space</string>
+    <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+enter for the shortcut. -->
+    <string name="menu_enter_shortcut_label">enter</string>
+    <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+delete for the shortcut. -->
+    <string name="menu_delete_shortcut_label">delete</string>
+
+    <string name="capital_on">"ON"</string>
+    <string name="capital_off">"OFF"</string>
+    <string name="already_in_security">已进入安全模式</string>
+    <!-- SearchView accessibility description for search text field [CHAR LIMIT=NONE] -->
+    <string name="searchview_description_submit">Submit query</string>
+
+    <string name="search_default_queryhint">Search...</string>
+    
+</resources>

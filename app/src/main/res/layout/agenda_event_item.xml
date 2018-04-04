@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/agenda_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart" >
+
+            <RelativeLayout
+                android:id="@+id/icon_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:gravity="start|center_vertical"
+                android:maxWidth="40dp"
+                android:minHeight="56dp"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="0dp" >
+
+                <com.android.calendar.ColorChipView
+                    android:id="@+id/agenda_item_color"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/text_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/when"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/title"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="0dp"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/android:textAppearanceListItemSecondary"
+                    android:textColor="@color/cale_focus_month_weekend_color"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/when"
+                    android:layout_below="@id/when"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/android:textAppearanceListItemSecondary"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="72dp"
+            android:background="@color/month_grid_lines"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/almanac_event_footer" />
+
+</LinearLayout>

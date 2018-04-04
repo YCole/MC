@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subheader_height01"
+        android:orientation="horizontal" 
+        android:gravity="center|center_vertical"
+        android:layout_marginTop="@dimen/padding03">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding05"
+            android:textColor="@color/cale_subtitle_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size02"
+            android:text="@string/huangli_shi_cheng" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/cale_subtitle_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size02"
+            android:text="@string/huangli_cai_sheng" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/cale_subtitle_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size02"
+            android:text="@string/huangli_xi_sheng" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding05"
+            android:gravity="center"
+            android:textColor="@color/cale_subtitle_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size02"
+            android:text="@string/huangli_ji_shi" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_shicheng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:divider="@color/month_grid_lines"
+        android:dividerHeight="1px">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/big_split"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFF1F3F5" />
+
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#73000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contet_view"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dian"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/dian_shape_other" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:singleLine="true"
+                android:maxWidth="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E6000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#73000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+         <!-- fushuo begin -->
+        <RelativeLayout
+            android:layout_margin="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:visibility="gone"
+                android:focusable="false"
+                android:id="@+id/cb_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+       <!-- fushuo end -->
+    </LinearLayout>
+
+    <View 
+        android:id="@+id/split_view"
+        style="@style/ItemLineSplit" />
+    
+    <RelativeLayout 
+        android:id="@+id/null_view"
+        android:layout_width="wrap_content"
+       android:layout_height="60dp"
+        />
+    
+</LinearLayout>

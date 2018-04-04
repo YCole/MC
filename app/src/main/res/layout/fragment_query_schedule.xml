@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.calendardemo.MainActivity" >
+
+    <ListView
+        android:id="@+id/query_schedule_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_no_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/no_schedule_margin_top"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_gome_sys_ic_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_gome_sys_ic_schedule" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_gome_sys_ic_schedule"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/search_no_have_schedule"
+            android:textColor="#33000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

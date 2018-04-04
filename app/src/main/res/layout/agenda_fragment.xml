@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+                android:id="@+id/agenda_before_label"
+                    android:layout_width="match_parent"
+                android:layout_height="@dimen/padding08"
+                android:gravity="center"
+                android:textSize="@dimen/font_size01"
+                android:textColor="@color/color06_transparency10"
+                android:background="@color/color03_transparency14"/>
+       <LinearLayout
+            android:id="@+id/agenda_listview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            
+            <com.android.calendar.StickyHeaderListView
+                android:id="@+id/agenda_sticky_header_list"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:dividerHeight="@null"
+                android:layout_weight=".40" >
+
+                <com.android.calendar.agenda.AgendaListView
+                    android:id="@+id/agenda_events_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/agenda_list_bg_color"
+                    android:dividerHeight="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="?android:attr/selectableItemBackground" />
+            </com.android.calendar.StickyHeaderListView>
+
+            <FrameLayout
+                android:id="@+id/agenda_event_info"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dip"
+                android:layout_weight=".60"
+                android:background="#FFFFFFFF" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/agenda_after_label"
+                    android:layout_width="match_parent"
+                android:layout_height="@dimen/padding08"
+                android:gravity="center"
+                android:textSize="@dimen/font_size01"
+                android:textColor="@color/color06_transparency10"
+                android:background="@color/color03_transparency14"/>
+
+    <LinearLayout
+        android:id="@+id/agenda_noEventLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/noEventView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon_no_event" 
+            android:tintMode="src_in"
+            android:tint="@color/no_event_color"/>
+        <TextView
+            android:id="@+id/noEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/no_event_title"
+            android:textColor="@color/no_event_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+        <!--
+    LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_alignParentBottom="true"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        style="?android:attr/buttonBarStyle"
+        android:background="@drawable/alarm_tab_selector"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/action_cancel_select"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alarm_tab_selector"
+            android:focusable="true"
+            android:text="@string/cancel_action"
+            android:textColor="#ff333333"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/action_delete_select"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alarm_tab_selector"
+            android:focusable="true"
+            android:text="@string/events_delete"
+            android:textColor="#ff333333"
+            android:textSize="18sp" />
+    </LinearLayout
+        -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/componets_bottombutton" />
+    </LinearLayout>

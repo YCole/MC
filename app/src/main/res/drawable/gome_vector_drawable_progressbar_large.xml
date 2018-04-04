@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="76dp"
+    android:width="76dp"
+    android:viewportHeight="76"
+    android:viewportWidth="76"
+    android:tint="?android:attr/colorControlActivated">
+
+    <group
+        android:name="root"
+        android:translateX="38.0"
+        android:translateY="38.0" >
+        <path
+            android:name="progressBarLeft"
+            android:fillColor="#00000000"
+            android:pathData="M0, 0 m 0, -29 a 29,29 0 1,1 0,58 a 29,29 0 1,1 0,-58"
+            android:strokeColor="#FFFFFF"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="5"
+            android:trimPathEnd="0"
+            android:trimPathOffset="0"
+            android:trimPathStart="0" />
+
+        <path
+            android:name="progressBarRight"
+            android:fillColor="#00000000"
+            android:pathData="M0, 0 m 0, 29 a 29,29 0 1,1 0,-58 a 29,29 0 1,1 0,58"
+            android:strokeColor="#FFFFFF"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="5"
+            android:trimPathEnd="0"
+            android:trimPathOffset="0"
+            android:trimPathStart="0" />
+    </group>
+</vector>

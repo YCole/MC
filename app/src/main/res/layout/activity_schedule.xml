@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context="com.example.administrator.scheduletest.MainActivity" xmlns:app1="http://schemas.android.com/apk/res/com.android.calendar">
+
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/action_title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#F1F2F3"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/schedule_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="@string/schedule"
+                android:textColor="#E6000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/select_view"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#f1f2f3"
+            android:visibility="gone" >
+
+            <!-- ?attr/actionBarSize -->
+
+            <ImageView
+                android:id="@+id/event_select_cancel"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="8dp"
+                android:paddingStart="18dp"
+                android:src="@drawable/icon_cancel" />
+
+            <TextView
+                android:id="@+id/event_select_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#e6000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/event_select_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:text="@string/select_all"
+                android:textColor="#ff2e76fc"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View style="@style/AllLineSplit" />
+
+        <RelativeLayout
+            android:id="@+id/search_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F3F4F4" >
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_shape"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/gome_icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/search"
+                    android:textColor="#4D000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F3F4F4"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_shape"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/gome_icon_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:hint="@string/search"
+                android:singleLine="true"
+                android:textColor="#E6000000"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_search_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/gome_icon_search_delete"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/cancel_action"
+            android:textColor="#FF2E76FC"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFBFC3C7" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/schedule_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.gm.internal.menu.FloatActionMenuView
+            android:id="@+id/floatMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            app1:maxItems="3"
+            app:menu="@menu/schedule_menu" />
+    </RelativeLayout>
+
+</LinearLayout>

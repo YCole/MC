@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape = "oval">
+
+    <size
+        android:width="47dp"
+        android:height="49dp"/>
+    <stroke
+        android:width="2px"
+        android:color="@color/cale_monthview_selectday_border_color"/>
+    <padding
+        android:bottom="2px"
+        android:left="2px"
+        android:right="2px"
+        android:top="2px" />
+</shape>

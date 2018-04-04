@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:picker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/lunar_year_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/lunar_month_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/lunar_day_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/year_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/month_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/day_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/complex_date_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:visibility="gone" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/am_pm_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/hour_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/minute_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.gome.gmtimepicker.view.GMPicker
+        android:id="@+id/second_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>

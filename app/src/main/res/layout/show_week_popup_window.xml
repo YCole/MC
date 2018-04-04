@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_select"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:background="@drawable/bg_wheel"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_pop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/select_date"
+        android:textColor="#E6000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#D0D0D0"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <!-- <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <com.hct.calendar.ui.WheelView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            diy:widthProportion="0.5" />
+
+        <com.hct.calendar.ui.WheelView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            diy:widthProportion="0.25" />
+
+        <com.hct.calendar.ui.WheelView
+            android:id="@+id/mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            diy:widthProportion="0.25" />
+    </LinearLayout> -->
+    
+    <com.gome.gmtimepicker.view.GMTimePicker 
+        android:id="@+id/gm_time_picker"
+        diy:maxDate="12/31/2037"
+        diy:minDate="01/01/1970"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <com.hct.calendar.ui.OneLineCheckboxLayout
+        android:id="@+id/cb_show_yang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:visibility="gone"
+        diy:checked="false"
+        diy:text="@string/show_lunar_calendar" />
+
+    <RelativeLayout
+        android:id="@+id/view_nongli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/show_lunar_calendar"
+            android:textColor="#74000000"
+            android:textSize="14sp" />
+
+        <gm.widget.GomeSwitch
+            android:id="@+id/gs_nongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#ff2e76fc"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/tv_ensure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="#ff2e76fc"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

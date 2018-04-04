@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<android.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences_general_category" >
+
+    <PreferenceCategory
+        android:title="@string/preferences_function_setting" >
+        <PreferenceScreen
+            android:summary="@string/preferences_import_sms_info"
+            android:title="@string/preferences_import_sms"
+            android:widgetLayout="@layout/widget_layout" >
+            <SwitchPreference
+                android:key="pay_card"
+                android:title="@string/preferences_credit_card_payment" />
+            <SwitchPreference
+                android:key="car_pay"
+                android:title="@string/preferences_air_train_ticket" />
+            <SwitchPreference
+                android:key="hotel_pay"
+                android:title="@string/preferences_hotel_reservation" />
+        </PreferenceScreen>
+
+        <SwitchPreference
+             
+            android:key="contact_sync"
+            android:summary="@string/preferences_sync_contact_info"
+            android:title="@string/preferences_sync_contact" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="preferences_show_almanac"
+            android:title="@string/preferences_almanac_taboo" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="weather_switch"
+            android:title="@string/preferences_gas_show" />
+    </PreferenceCategory>
+
+    <android.preference.SwitchPreference
+        android:key="preferences_show_week_num"
+        android:title="@string/preferences_show_week_num_title" />
+
+    <PreferenceCategory android:title="@string/preferences_calendar_tools" >
+        <android.preference.ListPreference
+            android:defaultValue="@string/preferences_week_start_day_default"
+            android:dialogTitle="@string/preferences_week_start_day_dialog"
+            android:entries="@array/preferences_week_start_day_labels"
+            android:entryValues="@array/preferences_week_start_day_values"
+            android:key="preferences_week_start_day"
+            android:title="@string/preferences_week_start_day_title"
+            android:widgetLayout="@layout/icon_next_layout" />
+
+        <ListPreference
+            android:defaultValue="-1"
+            android:entries="@array/preferences_add_account_labels"
+            android:entryValues="@array/preferences_add_account_values"
+            android:key="add_account"
+            android:title="@string/preferences_add_account"
+            android:widgetLayout="@layout/widget_layout" />
+    </PreferenceCategory>
+
+    <android.preference.SwitchPreference
+        android:defaultValue="false"
+        android:key="preferences_home_tz_enabled"
+        android:summary="@string/preferences_use_home_tz_descrip"
+        android:title="@string/preferences_use_home_tz_title"
+        android:color="@color/cale_checkbox_color" />
+
+    <android.preference.ListPreference
+        android:defaultValue="@string/preferences_home_tz_default"
+        android:dependency="preferences_home_tz_enabled"
+        android:key="preferences_home_tz"
+        android:title="@string/preferences_home_tz_title"
+        android:widgetLayout="@layout/icon_next_layout" />
+    <!--
+          PreferenceScreen
+        android:key="preferences_clear_search_history"
+        android:title="@string/preferences_clear_search_history_title"
+        android:summary="@string/preferences_clear_search_history_summary"/
+    -->
+
+    <android.preference.SwitchPreference
+        android:defaultValue="false"
+        android:key="preference_smart_reminder"
+        android:summary="@string/smart_reminder_summary"
+        android:title="@string/smart_reminder_title"
+        android:color="@color/cale_checkbox_color" />
+    <android.preference.SwitchPreference
+        android:defaultValue="true"
+        android:key="preferences_alerts"
+        android:title="@string/preferences_alerts_title"
+        android:color="@color/cale_checkbox_color" />
+
+    <!--
+        include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/general_preferences_alerts"/
+    -->
+    <PreferenceCategory android:title="@string/preferences_reminder_settings" >
+
+        <!-- ############## aaaa -->
+        <android.preference.RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:isIndicator="true"
+            android:key="preferences_alerts_ringtone"
+            android:ringtoneType="notification"
+            android:title="@string/preferences_alerts_ringtone_title"
+            android:widgetLayout="@layout/icon_next_layout" />
+
+        <!--
+         CheckBoxPreference
+        android:layout="?android:attr/preferenceLayoutChild"
+        android:key="preferences_alerts_vibrate"
+        android:title="@string/preferences_alerts_vibrateWhen_title"
+        android:defaultValue="false"
+        style="@style/checkboxpreference" /
+        -->
+        <android.preference.ListPreference
+            android:defaultValue="@string/prefDefault_alerts_vibrateWhen"
+            android:dialogTitle="@string/prefDialogTitle_vibrateWhen"
+            android:entries="@array/prefEntries_alerts_vibrateWhen"
+            android:entryValues="@array/prefValues_alerts_vibrateWhen"
+            android:key="preferences_alerts_vibrateWhen"
+            android:title="@string/preferences_alerts_vibrateWhen_title"
+            android:widgetLayout="@layout/icon_next_layout" />
+
+        <!--
+         <android.preference.SwitchPreference
+        android:color="@color/cale_checkbox_color"
+        android:defaultValue="false"
+        android:key="preferences_alerts_popup"
+        android:title="@string/preferences_alerts_popup_title"/>
+        -->
+
+        <android.preference.ListPreference
+            android:defaultValue="@string/preferences_default_reminder_default"
+            android:dialogTitle="@string/preferences_default_reminder_dialog"
+            android:entries="@array/preferences_default_reminder_labels"
+            android:entryValues="@array/preferences_default_reminder_values"
+            android:key="preferences_default_reminder"
+            android:title="@string/preferences_default_reminder_title"
+            android:widgetLayout="@layout/icon_next_layout" />
+        <!-- ############## aaaa bbbbbbbbbbbbb -->
+    </PreferenceCategory>
+    <!--
+          PreferenceScreen
+        android:key="preferences_quick_responses"
+        android:fragment="com.android.calendar.QuickResponseSettings"
+        android:title="@string/quick_response_settings"
+        android:summary="@string/quick_response_settings_summary" /
+    -->
+    <!--
+    <android.preference.Preference
+        android:key="build_version"
+        android:summary="@string/version_numble"
+        android:title="@string/preferences_build_version"/>
+    -->
+
+</android.preference.PreferenceScreen>

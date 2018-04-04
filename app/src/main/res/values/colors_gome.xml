@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <!-- button colors -->
+    <color name="btn_default_shape_press_color">#2775D7</color>
+    <color name="btn_default_shape_unpress_color">#F1F1F1</color>
+    <color name="btn_default_shape_no_enable_color">#D2D2D2</color>
+    <color name="btn_default_shape_border_color">#979797</color>
+
+    <color name="btn_text_press_color">#FFFFFF</color>
+    <color name="btn_text_unpress_color">#CC000000</color>
+    <color name="btn_text_disable_color">#4D000000</color>
+
+    <color name="view_default_bg">#F8F8F8</color>
+
+    <!--button colors-->
+    <color name="btn_gome_shape_press_color">#FFF2F2F2</color>
+    <color name="btn_gome_shape_unpress_color">#FFFCFCFC</color>
+    <color name="btn_gome_shape_no_enable_color">#FFFCFCFC</color>
+    <color name="btn_gome_shape_border_color">#FFBFC3C7</color>
+
+    <color name="btn_gome_text_press_color">#FFFFFF</color>
+    <color name="btn_gome_text_unpress_color">#FF2E76FC</color>
+    <color name="btn_gome_text_disable_color">#4D2E76FC</color>
+
+    <!--button colors-->
+    <color name="btn_gome_caution_shape_press_color">#FFF2F2F2</color>
+    <color name="btn_gome_caution_shape_unpress_color">#FFFCFCFC</color>
+    <color name="btn_gome_caution_shape_no_enable_color">#FFFCFCFC</color>
+    <color name="btn_gome_caution_shape_border_color">#BFC3C7</color>
+
+    <color name="btn_gome_caution_text_press_color">#FFFC3939</color>
+    <color name="btn_gome_caution_text_unpress_color">#FFFC3939</color>
+    <color name="btn_gome_caution_text_disable_color">#4DFC3939</color>
+
+    <!--button colors-->
+    <color name="btn_gome_blue_shape_press_color">#FF265FCA</color>
+    <color name="btn_gome_blue_shape_unpress_color">#FF2E76FC</color>
+    <color name="btn_gome_blue_shape_no_enable_color">#4D2E76FC</color>
+    <color name="btn_gome_blue_shape_no_enable_border_color">#4D2E76FC</color>
+    <color name="btn_gome_blue_shape_border_color">#FF2E76FC</color>
+
+    <color name="btn_gome_blue_text_press_color">#FFFFFFFF</color>
+    <color name="btn_gome_blue_text_unpress_color">#FFFFFFFF</color>
+    <color name="btn_gome_blue_text_disable_color">#4DFFFFFF</color>
+    <!--switch colors-->
+    <color name="switch_gome_thumb_color">#FFFFFF</color>
+    <color name="switch_gome_track_blue">#2E76FC</color>
+    <color name="switch_gome_track_gray">#F1F3F5</color>
+    <color name="gome_switch_solid_shadow">#33000000</color>
+    <color name="gome_switch_solid_normal">#FFFFFF</color>
+    <color name="gome_switch_solid_checked">#019285</color>
+    <color name="gome_switch_solid_disable">#FFFFFF</color>
+    <color name="gome_switch_solid_checked_disable">#FFFFFF</color>
+    <color name="gome_switch_solid_dark_normal">#9AFFFFFF</color>
+    <color name="gome_switch_solid_dark_disable">#33FFFFFF</color>
+    <color name="gome_switch_solid_checked_dark_disable">#33FFFFFF</color>
+    <color name="gome_switch_solid_dark_shadow">#9AFFFFFF</color>
+    <!--seekbar colors-->
+    <color name="seekbar_gome_tint_blue">#FF2E76FC</color>
+    <color name="seekbar_gome_black_light">#FF000000</color>
+    <color name="seekbar_gome_blue_light">#4D2E76FC</color>
+    <color name="seekbar_gome_gray_tint">#BDBDBD</color>
+    <color name="seekbar_gome_blue_tint">#2775D7</color>
+    <color name="seekbar_gome_fd_blue_tint">#4D2E76FC</color>
+    <color name="seekbar_gome_thumb_unpress_color">#26257EF9</color>
+
+    <color name="highlight_alpha_gome_colored">#332E76FC</color>
+    <color name="colorControlNormal">#4D2E76FC</color>
+
+    <color name="popup_divider_color">#FFBFC3C7</color>
+
+    <color name="ic_more_color">#1680FF</color>
+    <!-- MODIFIED BEGIN BY ZHENJIE.CHANG FOR ENABLE/DISABLE FLOAT_MENU_VIEW AT 2017/07/5 -->
+    <color name="gome_float_menu_bootombar_text_color">#73000000</color>
+    <color name="gome_float_menu_overflow_text_color">#E6000000</color>
+    <color name="gome_float_menu_bootombar_icon_color">#FF2E76FC</color>
+    <!-- MODIFIED END BY ZHENJIE.CHANG FOR ENABLE/DISABLE FLOAT_MENU_VIEW AT 2017/07/5 -->
+    <color name="gome_color_control_normal">#F1F3F5</color>
+    <color name="gome_color_control_actived">#2E76FC</color>
+
+    <!-- 54% black -->
+    <color name="secondary_text_default_gome_light">#8a000000</color>
+    <!-- 87% black -->
+    <color name="primary_text_default_gome_light">#de000000</color>
+    <color name="alertdialog_neturalbutton_text_color">#FFFC3939</color>
+    <color name="gome_primary_text_material_light">#73000000</color>
+
+    <color name="gome_search_bar_bg_color">#FFFFFFFF</color>
+    <color name="gome_search_bar_bg_stroke_color">#FFBFC7C3</color>
+    <color name="gome_search_hit_text_color">#4D000000</color>
+</resources>
+

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- REMINDERS -->
+
+    <LinearLayout
+        android:id="@+id/reminders_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/reminders_group_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding05"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/event_info_reminders_label" />
+
+        <LinearLayout
+            android:id="@+id/reminder_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding05"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/reminder_add_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height01"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/reminder_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/padding05"
+                android:gravity="center_vertical|start"
+                android:src="@drawable/add_circle"
+                android:tint="@color/cale_icon_color" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/reminder_add"
+                android:id="@+id/reminders_group_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/padding05"
+                android:gravity="center_vertical|start"
+                android:singleLine="true"
+                android:text="@string/reminders_label"
+                android:textColor="@color/color06_transparency13"
+                android:textSize="@dimen/font_size02" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- REPEATS -->
+
+    <LinearLayout
+        android:id="@+id/repeats_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/repeats_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/repeats_label" />
+
+        <Spinner
+            android:id="@+id/rrule"
+            style="@style/spinner_press_bg_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/accessibility_pick_recurrence"
+            android:gravity="center_vertical"
+            android:text="@string/does_not_repeat" />
+    </LinearLayout>
+
+    <!-- CALENDARS SELECTOR for new events -->
+
+    <LinearLayout
+        android:id="@+id/calendar_selector_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/acount_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acount_label" />
+
+        <Spinner
+            android:id="@+id/calendars_spinner"
+            style="@style/spinner_press_bg_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:prompt="@string/edit_event_calendar_label" />
+        <!--
+            ImageButton
+            android:id="@+id/change_color_new_event"
+            style="?android:attr/buttonBarButtonStyle"
+            android:src="@drawable/ic_menu_colorpicker_holo_dark"
+            android:contentDescription="@string/choose_event_color_label"
+            android:layout_width="@dimen/month_week_day_layout_width"
+            android:layout_height="@dimen/month_week_day_layout_height"
+            android:enabled="false"
+            android:layout_marginEnd="8dip"
+            android:layout_gravity="center_vertical"
+            android:padding="8dip"
+            android:scaleType="centerInside"
+            android:visibility="invisible" /
+        -->
+    </LinearLayout>
+
+    <include
+        android:id="@+id/edit_event_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        layout="@layout/edit_event_color"
+        android:visibility="gone" />
+    <!-- CALENDAR DISPLAY for existing events -->
+
+    <LinearLayout
+        android:id="@+id/calendar_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/acount_label2"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acount_label" />
+
+        <EditText
+            android:id="@+id/calendar_textview"
+            style="@style/TextAppearance.EditEvent_Edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:editable="false"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size02" />
+    </LinearLayout>
+
+    <!-- RESPONSE -->
+
+    <LinearLayout
+        android:id="@+id/response_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/response_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/view_event_response_label" />
+
+        <RadioGroup
+            android:id="@+id/response_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dip" >
+
+            <com.hct.gios.widget.RadioButtonHCT
+                android:id="@+id/response_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="128dip"
+                android:text="@string/response_yes"
+                android:textColor="@color/edittext_input_color"
+                android:textSize="@dimen/font_size02" />
+            <!-- style="@style/TextAppearance.EditEvent" -->
+
+            <com.hct.gios.widget.RadioButtonHCT
+                android:id="@+id/response_maybe"
+                style="@style/TextAppearance.EditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="128dip"
+                android:text="@string/response_maybe" />
+
+            <com.hct.gios.widget.RadioButtonHCT
+                android:id="@+id/response_no"
+                style="@style/TextAppearance.EditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="128dip"
+                android:text="@string/response_no" />
+        </RadioGroup>
+
+        <View style="@style/EditEventSeparator" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/organizer_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/organizer_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_event_organizer_label" />
+
+        <TextView
+            android:id="@+id/organizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding03"
+            android:textColor="@color/color06_transparency13"
+            android:textSize="@dimen/font_size02" />
+        <!-- style="@style/TextAppearance.EditEvent_Value" -->
+
+        <View style="@style/EditEventSeparator" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_attendees_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attendees_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.android.calendar.RecipientsEditor
+                android:id="@+id/attendees"
+                style="@style/TextAppearance.EditEvent_Edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_attendees"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textMultiLine|textCapWords"
+                android:paddingTop="0dp"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/add_contact"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center|end"
+                android:layout_marginStart="16dp"
+                android:background="@color/calendar_background_color"
+                android:src="@drawable/person"
+                android:tint="@color/cale_icon_color" />
+            <!-- style="@style/icon_guests" -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- PRESENCE - Show me as [busy | available] -->
+
+    <LinearLayout
+        android:id="@+id/availability_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/presence_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/presence_label" />
+
+        <Spinner
+            android:id="@+id/availability"
+            style="@style/spinner_press_bg_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/accessibility_reminder_showmeas"
+            android:entries="@array/availability"
+            android:prompt="@string/presence_label" />
+    </LinearLayout>
+
+    <!-- PRIVACY -->
+
+    <LinearLayout
+        android:id="@+id/visibility_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/privacy_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_label" />
+
+        <Spinner
+            android:id="@+id/visibility"
+            style="@style/spinner_press_bg_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/accessibility_reminder_privacy"
+            android:entries="@array/visibility"
+            android:prompt="@string/privacy_label" />
+    </LinearLayout>
+
+    <!-- TIME ZONE - Read-only textview version -->
+
+    <LinearLayout
+        android:id="@+id/timezone_textview_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/timezone_textView"
+            style="@style/spinner_press_bg_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- style="@style/TextAppearance.EditEvent_Value" -->
+    </LinearLayout>
+
+    <!-- TIME ZONE - Read/write version with button to launch picker -->
+
+    <LinearLayout
+        android:id="@+id/timezone_button_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/time_zone_label"
+            style="@style/TextAppearance.EditEvent_Labeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timezone_label" />
+
+        <Button
+            android:id="@+id/timezone_button"
+            style="@style/spinner_press_bg_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/accessibility_pick_time_zone"
+            android:gravity="start|bottom"
+            android:singleLine="true"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <!-- DESCRIPTION -->
+
+    <LinearLayout
+        android:id="@+id/description_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding05"
+        android:layout_marginStart="@dimen/padding05"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/TextAppearance.EditEvent_Edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:capitalize="sentences"
+            android:hint="@string/hint_description"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:singleLine="true"
+            android:windowSoftInputMode="adjustPan" />
+    </LinearLayout>
+
+</LinearLayout>

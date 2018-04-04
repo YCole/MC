@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- #lunar -->
+    <string name="lunar_date_formatter">yyyy年MM月dd日</string>
+    <string name="lunar_leap" translatable="false">闰</string>
+    <string name="lunar_tenth_day" translatable="false">初十</string>
+    <string name="lunar_twentieth_day" tanslatable="false">二十</string>
+    <string name="lunar_thirtieth_day" translatable="false">三十</string>
+    <string name="lunar_year" translatable="false">年</string>
+    <string name="lunar_month" translatable="false">月</string>
+    <string name="lunar_day" translatable="false">日</string>
+
+    <!-- #feedback Activity -->
+    <string name="feedback_items">您有新回复条数：</string>
+    <string name="tip">点击下面的链接可打开打开浏览器进行反馈：</string>
+    <string name="feedback_activty_description">意见和反馈</string>
+    <string name="feedback_url">http://cloud.hctdevice.com/feedback</string>
+
+    <!-- #festival update -->
+    <string name="downlaod_fail">节假日安排更新失败</string>
+    <string name="downlaod_success">节假日安排更新成功</string>
+    <string name="preferences_auto_download_festival_title">自动更新法定节假日</string>
+    <string name="preferences_auto_download_festival_summary">最新法定节假日安排发布后，联网时自动更新（约2K）</string>
+    <string name="preferences_manual_download_festival_title">立即获取最新法定节假日</string>
+    <string name="preferences_manual_download_festival_summary">点击立即获取当前最新的法定节假日安排</string>
+    
+    <string name="preferences_subscribe_almanac_title">订阅黄历</string>
+    <string name="preferences_subscribe_weather_title">订阅天气</string>
+    <string name="preferences_subscribe_weather_summary">请使用天气小部件获取相关数据</string>
+    
+    <string name="huangli_title"  translatable="false">黄历</string>
+    <string name="huangli_shi_cheng_ji_xiong"  translatable="false">时辰吉凶</string>
+    <string name="huangli_shi_cheng"  translatable="false">时辰</string>
+    <string name="huangli_cai_sheng"  translatable="false">财神</string>
+    <string name="huangli_xi_sheng"  translatable="false">喜神</string>
+    <string name="huangli_ji_shi"  translatable="false">吉时</string>
+    <string name="huangli_shi_cheng_ji"  translatable="false">吉</string>
+    <string name="huangli_shi_cheng_xiong"  translatable="false">凶</string>
+    <string name="huangli_yi"  translatable="false">宜</string>
+    <string name="huangli_ji"  translatable="false">忌</string>
+    <string name="huangli_tai_sheng"  translatable="false">胎神</string>
+    <string name="huangli_chong_sha"  translatable="false">冲煞</string>
+    <string name="huangli_xing_xiu"  translatable="false">星宿</string>
+    <string name="huangli_peng_zu_bai_ji"  translatable="false">彭祖百忌</string>
+    <string name="huangli_wu_xing"  translatable="false">五行</string>
+    <string name="huangli_provider"  translatable="false">"数据由365日历提供"</string>
+    <string name="lunar_yearly" translatable="false">"农历每年 （<xliff:g id="DATES">%s</xliff:g>）"</string>
+    <string name="lunar_yearly_label" translatable="false">"农历每年"</string>
+</resources>

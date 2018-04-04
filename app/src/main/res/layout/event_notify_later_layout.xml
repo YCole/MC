@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notify_super_later"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80151d27">
+
+    <RelativeLayout
+        android:id="@+id/notify_sub_later"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/notify_bg">
+
+        <TextView
+            android:id="@+id/event_notify_later_tv"
+            style="@style/FirstLineText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="@string/later" />
+
+        <LinearLayout
+            android:id="@+id/event_notify_later_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_notify_later_tv"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_later_5min"
+                style="@style/SecondLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/later_5min" />
+
+
+            <TextView
+                android:id="@+id/event_later_10min"
+                style="@style/SecondLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/later_10min" />
+
+
+            <TextView
+                android:id="@+id/event_later_30min"
+                style="@style/SecondLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/later_30min" />
+
+
+            <TextView
+                android:id="@+id/event_later_1hour"
+                style="@style/SecondLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/later_1hour" />
+
+
+            <TextView
+                android:id="@+id/event_later_2hour"
+                style="@style/SecondLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/later_2hour" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

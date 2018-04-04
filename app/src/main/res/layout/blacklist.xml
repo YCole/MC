@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:id="@+id/delete_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/action_bar_background"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/do_delete_btn"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ib_event_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="2"
+                android:src="@drawable/ic_menu_trash_holo_light" />
+
+            <TextView
+                android:id="@+id/tv_event_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="-4dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/delete_label"
+                android:textColor="#ffffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
+

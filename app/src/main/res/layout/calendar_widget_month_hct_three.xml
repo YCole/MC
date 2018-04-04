@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day1_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day1_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_31"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_31"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_31" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_31"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day2_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day2_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_32"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_32"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_32" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_32"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day3_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day3_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_33"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_33"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_33" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_33"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day4_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day4_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_34"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_34"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_34" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_34"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day5_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day5_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_35"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_35"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_35" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_35"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day6_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day6_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_36"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_36"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_36" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_36"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeb_calendar_week3_day7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/typeb_calendar_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day7_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginTop="-2dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_middle_text_size" />
+
+            <TextView
+                android:id="@+id/typeb_calendar_week3_day7_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/month_week_day_bottom_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agenda_event_color_37"
+            style="@style/WidgetMonthEvent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/widget_week_background"
+            android:gravity="center"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon_37"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_above="@id/typeb_calendar_num"
+            android:layout_toRightOf="@id/agenda_event_color_37" />
+
+        <ImageView
+            android:id="@+id/agenda_todo_color_37"
+            style="@style/WidgetMonthTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeb_calendar_num"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:src="@drawable/widget_event_circle_draw" />
+    </RelativeLayout>
+
+</merge>

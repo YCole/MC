@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:id="@+id/calendar" -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/typeb_calendar_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="294dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/typeb_calendar_week_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/month_week_day_layout_height"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/calendar_widget_month_hct_one" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeb_calendar_week_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/month_week_day_layout_height"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/calendar_widget_month_hct_two" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeb_calendar_week_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/month_week_day_layout_height"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/calendar_widget_month_hct_three" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeb_calendar_week_four"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/month_week_day_layout_height"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/calendar_widget_month_hct_four" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeb_calendar_week_five"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/month_week_day_layout_height"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/calendar_widget_month_hct_five" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeb_calendar_week_six"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/month_week_day_layout_height"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/calendar_widget_month_hct_six" />
+    </LinearLayout>
+
+</LinearLayout>

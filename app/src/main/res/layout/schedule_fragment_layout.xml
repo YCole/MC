@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/schedule_title_et"
+        style="@style/FirstLineText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#00000000"
+        android:hint="@string/time_heading"
+        android:minHeight="56dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp" />
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/all_day_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@@string/all_day"
+            android:textColor="#E6000000"
+            android:textSize="15sp" />
+
+        <gm.widget.GomeSwitch
+            android:id="@+id/gs_allday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/start_time_time"
+                    style="@style/FirstLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/start_time_date"
+                    style="@style/SecondLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/right_arrow" />
+
+        <RelativeLayout
+            android:id="@+id/end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/end_time_time"
+                    style="@style/FirstLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/end_time_date"
+                    style="@style/SecondLineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/reminder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/remind" />
+
+        <ImageView
+            android:id="@+id/icon_end"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray" />
+
+        <TextView
+            android:id="@+id/reminder_text_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/icon_end"
+            android:text="@string/dismiss_label" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <RelativeLayout
+        android:id="@+id/repeat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gome_calendar_selector" >
+
+        <TextView
+            style="@style/FirstLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/repeatability" />
+
+        <ImageView
+            android:id="@+id/icon_end2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray" />
+
+        <TextView
+            android:id="@+id/repeat_text_tv"
+            style="@style/SecondLineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/icon_end2"
+            android:text="@string/one_off_activity" />
+    </RelativeLayout>
+
+    <View style="@style/LineSplit" />
+
+    <com.hct.calendar.ui.ScheduleMoreLayout
+        android:id="@+id/schedule_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hct.calendar.ui.ScheduleMoreLayout>
+
+</LinearLayout>

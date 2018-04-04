@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout android:id="@+id/yearItem"
+         xmlns:android="http://schemas.android.com/apk/res/android"   
+         android:layout_height="fill_parent"
+         android:layout_width="fill_parent">
+
+         <TextView android:id="@+id/ItemText"
+               android:layout_width="70dp"
+               android:layout_height="50dp"
+               android:gravity="center"            
+               android:textSize="@dimen/font_size03"
+               android:textColor="@color/text_color">
+         </TextView>
+         
+</RelativeLayout> 

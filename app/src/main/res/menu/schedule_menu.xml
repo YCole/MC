@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/float_menu_event_create"
+        android:icon="@drawable/gome_ic_add"
+        android:title="@string/create">
+    </item>
+    <item
+        android:id="@+id/float_menu_calendar"
+        android:icon="@drawable/gome_ic_calendar"
+        android:title="@string/calendar">
+    </item>
+   <item
+        android:id="@+id/float_menu_holiday"
+        android:icon="@drawable/gome_sys_ic_setting"
+        android:title="@string/festival_solar_terms">
+    </item>
+    <item
+        android:id="@+id/float_menu_setting"
+        android:icon="@drawable/gome_sys_ic_setting"
+        android:title="@string/calendar_settings">
+    </item>
+
+</menu>

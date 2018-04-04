@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_add_account"
+        android:alphabeticShortcut="a"
+        android:showAsAction="withText|never"
+        android:title="@string/add_account"/>
+     <item
+        android:id="@+id/action_manage_sync_set"
+        android:alphabeticShortcut="b"
+        android:showAsAction="withText|never"
+        android:title="@string/select_synced_calendars_button"/>
+</menu>

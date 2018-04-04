@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="14dp"
+    android:paddingEnd="14dp"
+    android:paddingStart="18dp"
+    android:paddingTop="14dp" 
+    android:background="@drawable/shape_item_bg">
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_gome_ring" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="18dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/selector_btn_title_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_item_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:textColor="@color/selector_btn_sub_title_text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_gome_arrow_right"
+        android:gravity="center"
+        android:textColor="@color/selector_btn_sub_title_text_color"
+        android:textSize="13sp" />
+
+</LinearLayout>

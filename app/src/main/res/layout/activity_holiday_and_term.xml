@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/action_title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#F1F2F3"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="@string/holiday_and_term"
+                android:textColor="#E6000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#F1F2F3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" >
+
+            <Button
+                android:id="@+id/bt_festival"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingEnd="21dp"
+                android:paddingStart="21dp"
+                android:text="@string/holiday_view"
+                android:textColor="@color/selector_btn_tab_text_color"
+                android:textSize="15sp" />
+            
+            <Button
+                android:id="@+id/bt_terms"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingEnd="21dp"
+                android:paddingStart="21dp"
+                android:text="@string/term_view"
+                android:textColor="@color/selector_btn_tab_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFBFC3C7" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:overScrollMode="never"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp" />
+
+</RelativeLayout>
